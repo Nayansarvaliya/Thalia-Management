@@ -1,0 +1,137 @@
+*{
+    
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+/*navbar section*/
+a{
+    text-decoration: none;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#FFFFFF;
+    padding: 15px;
+}
+
+.logo {
+   width: 150px;
+   padding: 10px;
+}
+
+.navbar-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links ul li {
+    margin: 0 15px;
+}
+
+.navbar-links ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight:400;
+    letter-spacing: 3px;
+}
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.toggle-button .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+}
+.header-icons-noti {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #111111;
+    color: white;
+    font-family: Montserrat-Medium;
+    font-size: 12px;
+    position: absolute;
+    top: 20px;
+    right: 5px;
+}
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+.nav-a{
+    color: #fff;
+}
+/*header*/
+.header{
+    background-image: url(/img/1.jpg);
+    height: 550px;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom;
+}
+.header-title h1{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 400;
+}
+.header-form{
+    position: relative;
+    background-color: rgba(0, 0, 0, .85);
+    padding: 15px;
+    display: block;
+    width: 100%;
+    opacity: 0.8;
+}
+.about-deatils h6{
+    font-weight: 400;
+    font-size: 20px;
+    text-transform:uppercase;
+    letter-spacing: 3px;
+    margin-top: 30px;
+}
+.about-deatils h1{
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.about-deatils{
+    font-size: 20px;
+}
+.about-img img{
+    width: 100%;
+    height: 500px;
+}
